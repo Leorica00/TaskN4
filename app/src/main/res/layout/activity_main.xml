@@ -16,12 +16,14 @@
         android:layout_marginTop="139dp">
 
         <View
+            android:id="@+id/top_square"
             android:layout_width="45dp"
             android:layout_height="43dp"
             android:background="@drawable/costume_btn_right"
             />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/hello_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hello"
@@ -31,13 +33,15 @@
             android:layout_marginTop="15dp"/>
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/introduce_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lets_introduce"
             android:textSize="24sp"
             android:textColor="@color/light_grey"/>
 
-        <LinearLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/full_name_linear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -51,6 +55,7 @@
                 android:padding="2dp"/>
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/full_name_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
@@ -60,9 +65,10 @@
                 android:lines="1"
                 android:textColor="@color/white"
                 android:textColorHint="@color/light_grey" />
-        </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <LinearLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/username_linear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -76,6 +82,7 @@
                 android:padding="2dp"/>
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/username_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
@@ -85,7 +92,7 @@
                 android:lines="1"
                 android:textColor="@color/white"
                 android:textColorHint="@color/light_grey" />
-        </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -93,6 +100,7 @@
             android:layout_marginTop="64dp">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/left_btn"
                 android:layout_width="58dp"
                 android:layout_height="58dp"
                 android:layout_gravity="center"
@@ -103,7 +111,8 @@
                 android:textColor="#3DD598"
                 tools:ignore="SpeakableTextPresentCheck" />
 
-            <LinearLayout
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/next_btn"
                 android:layout_width="245dp"
                 android:layout_height="58dp"
                 android:clickable="true"
@@ -113,6 +122,7 @@
                 android:gravity="center">
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/next_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -128,7 +138,7 @@
                     android:contentDescription="@string/right_arrow"
                     android:src="@drawable/right_arrow"
                     tools:ignore="ImageContrastCheck" />
-            </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.appcompat.widget.LinearLayoutCompat>
